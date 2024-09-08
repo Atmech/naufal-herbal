@@ -5,9 +5,9 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Check, Phone, Menu } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import logo from "@/assets/images/nhlogo.png"
-import product from "@/assets/images/product.png"
-import whatsapp from "@/assets/images/nuafalwhatsapp.jpg"
+import logo from "@/assets/images/nhlogo.webp"
+import product from "@/assets/images/product.webp"
+import whatsapp from "@/assets/images/nuafalwhatsapp.webp"
 import { useState } from 'react';
 
 const Page = () => {
@@ -40,7 +40,7 @@ const Page = () => {
 				</button>
 			</header>
 			<main className="flex-1">
-				<section className="w-full min-h-screen py-12 md:py-24 lg:py-32 bg-[url('/assets/images/ayu4rved.jpg')] bg-cover bg-center bg-no-repeat flex items-center">
+				<section className="w-full min-h-screen py-12 md:py-24 lg:py-32 bg-[url('/assets/images/ayu4rved.webp')] bg-cover bg-center bg-no-repeat flex items-center">
 					<div className="container px-4 md:px-6 mx-auto">
 						<div className="flex flex-col items-center space-y-4 text-center">
 							<h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-black drop-shadow-lg">
