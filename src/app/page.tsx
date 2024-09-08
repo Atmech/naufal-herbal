@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Leaf, ShoppingBag, Check, ArrowRight, Phone } from "lucide-react"
+import { Check, Phone } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import logo from "@/assets/images/nhlogo.png"
