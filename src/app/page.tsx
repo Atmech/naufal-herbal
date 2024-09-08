@@ -15,7 +15,7 @@ const Page = () => {
 
 	return (
 		<div className="flex flex-col min-h-screen bg-green-50">
-			<header className="px-4 lg:px-6 h-16 flex items-center justify-between bg-white shadow-sm">
+			<header className="px-4 lg:px-6 h-16 flex items-center justify-between bg-white shadow-sm text-black">
 				<Link className="flex items-center justify-center" href="#">
 					<Image src={logo} alt="Naufal Herbal" width={80} height={80} />
 					<span className="ml-2 text-xl md:text-2xl font-bold text-gray-800">Naufal Herbal</span>
@@ -59,7 +59,7 @@ const Page = () => {
 				</section>
 				<section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-white">
 					<div className="container px-4 md:px-6">
-						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
+						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-black">
 							About Us
 						</h2>
 						<p className="text-center mb-12 text-gray-600 max-w-2xl mx-auto">
@@ -88,7 +88,7 @@ const Page = () => {
 				</section>
 				<section id="product" className="w-full py-12 md:py-24 lg:py-32 bg-green-100">
 					<div className="container px-4 md:px-6">
-						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
+						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-black">
 							Our Star Product: Herbal Churan Powder
 						</h2>
 						<p className="text-center mb-12 text-gray-600 max-w-2xl mx-auto">
@@ -107,7 +107,7 @@ const Page = () => {
 									</p>
 								</CardContent>
 							</Card>
-							<div className="space-y-4">
+							<div className="space-y-4 text-black">
 								<h3 className="text-3xl font-bold">Benefits:</h3>
 								<ul className="space-y-2">
 									{[
@@ -128,7 +128,7 @@ const Page = () => {
 				</section>
 				<section id="order" className="w-full py-12 md:py-24 lg:py-32 bg-white">
 					<div className="container px-4 md:px-6 text-center">
-						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4 text-black">
 							Order Now via WhatsApp
 						</h2>
 						<p className="mb-8 text-gray-600 max-w-2xl mx-auto">
