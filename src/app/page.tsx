@@ -8,7 +8,7 @@ import Link from "next/link"
 import logo from "@/assets/images/nhlogo.webp"
 import product from "@/assets/images/product.webp"
 import whatsapp from "@/assets/images/nuafalwhatsapp.webp"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
@@ -19,6 +19,29 @@ const poppins = Poppins({
 
 const Page = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
+
+	useEffect(() => {
+		// Simulate loading time (you can remove this in production)
+		const timer = setTimeout(() => {
+			setIsLoading(false);
+		}, 2000);
+
+		return () => clearTimeout(timer);
+	}, []);
+
+	if (isLoading) {
+		return (
+			<div className="flex flex-col items-center justify-center min-h-screen bg-green-50">
+				<div className="relative">
+					<div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-green-600"></div>
+					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+						<Image src={logo} alt="Naufal Herbal" width={60} height={60} />
+					</div>
+				</div>
+			</div>
+		);
+	}
 
 	return (
 		<div className={`flex flex-col min-h-screen bg-green-50 ${poppins.className}`}>
