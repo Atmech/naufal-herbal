@@ -9,12 +9,19 @@ import logo from "@/assets/images/nhlogo.webp"
 import product from "@/assets/images/product.webp"
 import whatsapp from "@/assets/images/nuafalwhatsapp.webp"
 import { useState } from 'react';
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const Page = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<div className="flex flex-col min-h-screen bg-green-50">
+		<div className={`flex flex-col min-h-screen bg-green-50 ${poppins.className}`}>
 			<header className="px-4 lg:px-6 h-16 flex items-center justify-between bg-white shadow-sm text-black">
 				<Link className="flex items-center justify-center" href="#">
 					<Image src={logo} alt="Naufal Herbal" width={80} height={80} />
@@ -57,7 +64,7 @@ const Page = () => {
 						</div>
 					</div>
 				</section>
-				<section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-white">
+				<section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-white flex justify-center">
 					<div className="container px-4 md:px-6">
 						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-black">
 							About Us
@@ -77,7 +84,7 @@ const Page = () => {
 							</Card>
 							<Card className="bg-green-100 border-0">
 								<CardContent className="p-6">
-									<h3 className="text-xl font-bold mb-2">Mr. Nawzish Ansari</h3>
+									<h3 className="text-xl font-bold mb-2">Mr. Nawazish Ansari</h3>
 									<p className="text-gray-600">
 										Managing operations with a commitment to make natural remedies accessible to everyone.
 									</p>
@@ -86,22 +93,22 @@ const Page = () => {
 						</div>
 					</div>
 				</section>
-				<section id="product" className="w-full py-12 md:py-24 lg:py-32 bg-green-100">
+				<section id="product" className="w-full py-12 md:py-24 lg:py-32 bg-green-100 flex justify-center">
 					<div className="container px-4 md:px-6">
 						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-black">
-							Our Star Product: Herbal Churan Powder
+							Our Star Product: Herbal churna Powder
 						</h2>
 						<p className="text-center mb-12 text-gray-600 max-w-2xl mx-auto">
-							Our Herbal Churan Powder is designed to help you achieve better health with its Ayurvedic blend of herbs. 
+							Our Herbal churna Powder is designed to help you achieve better health with its Ayurvedic blend of herbs. 
 							A simple, natural solution for daily wellness, right from your home.
 						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 							<Card className="bg-white border-0">
 								<CardContent className="p-6">
 									<div className="flex items-center justify-center w-auto h-auto bg-green-200 rounded-md mb-4">
-										<Image src={product} alt="Herbal Churan Powder"className="w-auto h-auto object-cover"/>
+										<Image src={product} alt="Herbal churna Powder"className="w-auto h-auto object-cover"/>
 									</div>
-									<h3 className="text-2xl font-bold text-gray-800 mb-2">Herbal Churan Powder</h3>
+									<h3 className="text-2xl font-bold text-gray-800 mb-2">Herbal churna Powder</h3>
 									<p className="text-gray-600">
 										An Ayurvedic blend for promoting overall health and wellness.
 									</p>
@@ -126,13 +133,13 @@ const Page = () => {
 						</div>
 					</div>
 				</section>
-				<section id="order" className="w-full py-12 md:py-24 lg:py-32 bg-white">
+				<section id="order" className="w-full py-12 md:py-24 lg:py-32 bg-white flex justify-center">
 					<div className="container px-4 md:px-6 text-center">
 						<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4 text-black">
 							Order Now via WhatsApp
 						</h2>
 						<p className="mb-8 text-gray-600 max-w-2xl mx-auto">
-							Ready to experience the benefits of Herbal Churan Powder? Place your order directly through WhatsApp!
+							Ready to experience the benefits of Herbal churna Powder? Place your order directly through WhatsApp!
 						</p>
 						<div className="flex flex-col items-center space-y-4">
 							<div className="w-72 h-72 bg-gray-200 rounded-lg flex items-center justify-center">
@@ -148,7 +155,7 @@ const Page = () => {
 					</div>
 				</section>
 			</main>
-			<footer className="w-full py-6 bg-gray-800 text-white">
+			<footer className="w-full py-6 bg-gray-800 text-white flex justify-center">
 				<div className="container px-4 md:px-6">
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 						<div>
